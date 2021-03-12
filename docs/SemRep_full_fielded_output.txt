@@ -1,0 +1,19 @@
+Text Fields: PMID|SUBSECTION|TItle/ABstract|SENT_NUM|TEXT
+Relation Fields: SUBJ_CUI|SUBJ_NAME|SUBJ_SEMTYPES|SUBJ_ST_USED|SUBJ_TEXT|SUBJ_NEG|PREDICATE|OBJ_CUI|OBJ_NAME|OBJ_SEMTYPES|OBJ_ST_USED|OBJ_TEXT|OBJ_NEG
+
+Text Fields:
+PMID: The PubMed ID of the abstract from which this sentence was extracted.
+SUBSECTION: (Optional) If the abstract is structured, this is the subsection under which the sentence falls in the abstract. For example, "BACKGROUND", "CONCLUSIONS", etc.
+TItle/ABstract: "ti" if the sentence is part of a paper title, "ab" if it is part of an abstract.
+SENT_NUM: The index of the sentence in the abstract.
+TEXT: The sentence.
+
+Relation Fields:
+*_CUI: The CUI of the subject/object entity. If a CUI starts with
+'DC' instead of just 'C' it is an iDISK CUI and is not present in the UMLS. 
+*_NAME: The preferred name of the subject/object entity. I.e. the name used to refer to the entity in the UMLS/iDISK.
+*_SEMTYPES: All UMLS semantic types of this subject/object entity, corresponding to the CUI.
+*_ST_USED: The UMLS semantic type of the subject/object entity that was used for determining this relationship according to the SemRep rules.
+*_TEXT: The text in the sentence that was matched to find the subject/object entity.
+*_NEG: 1 if the subject/object is negated in the sentence. 0 otherwise.
+PREDICATE: The SemRep predicate defining this relationship.
