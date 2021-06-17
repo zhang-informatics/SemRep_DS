@@ -5,7 +5,6 @@ SuppKG was generated using SemRepDS on 600k PubMed abstracts to find semantic tr
 <br>
 ## Files
 * supp_kg.gpickle.bz2 was generated using the NetworkX (2.5) Python package. Python 3.8 was used to generate the file which uses Pickle protocol 5. Opening the file using networkx.readwrite.gpickle.read_gpickle() will require using Python 3.8.
-<br>
 * supp_kg.json.tar.bz2 can be decompressed and loaded using json.load() and passing the resulting dictionary to networkx.readwrite.json_graph.node_link_graph()
 
 <br><br>
